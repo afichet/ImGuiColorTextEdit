@@ -2003,6 +2003,11 @@ void TextEditor::Redo(int aSteps)
 		mUndoBuffer[mUndoIndex++].Redo(this);
 }
 
+int TextEditor::GetUndoIndex() const
+{
+	return mUndoIndex;
+}
+
 const TextEditor::Palette & TextEditor::GetDarkPalette()
 {
 	const static Palette p = { {

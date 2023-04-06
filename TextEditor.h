@@ -261,6 +261,7 @@ public:
 	bool CanRedo() const;
 	void Undo(int aSteps = 1);
 	void Redo(int aSteps = 1);
+	int GetUndoIndex() const;
 
 	static const Palette& GetDarkPalette();
 	static const Palette& GetLightPalette();
